@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 
 <html>
-        <head>
-            <meta charset="utf-8"/>
+
+     <head>
+                <meta charset="utf-8"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Reservia</title>
                 <link rel="stylesheet" href="style.css" />
                 <script src="https://kit.fontawesome.com/f9349f7e63.js" crossorigin="anonymous"></script>
+     </head>
 
-       </head>
+    <body>
+            <header>
+                <!-- Header logo Navigation -->
+            
+                    <div class="NAVMENU">
 
-<body>
+                        <div class="LOGOSVG">
+                            <img src="/Users/ivanaradic/Documents/GitHub/Reservia/images/logo/Reservia.svg" alt="Reservia">
+                            <div class="sign">
+                            <a href="#" class="SIGNUPmob">S'inscrire</a>
+                            </div>
+                        </div>
 
+                    
+                            <nav>      
+                                <ul class="MENINAV">
+                                    <li><a href="#">Hébergements</a></li>
+                                    <li><a href="#">Activités</a></li>
+                                    <li><a href="#" class="SIGNUP">S'inscrire</a></li>
+                                </ul>
+                            </nav>
+                        
+                    
 
-     <!-- Header logo Navigation -->	
-
-
-        <header class="logonav">
-
-            <div class="logo">
-                <img src="/Users/ivanaradic/Documents/GitHub/Reservia/images/logo/Reservia.svg" alt="Reservia">
-            </div>
+                    </div>
 
             
-                    <nav>      
-                        <ul class="navigation">
-                            <li><a href="#">Hébergements</a></li>
-                            <li><a href="#">Activités</a></li>
-                            <li><a href="#" class="sign">S'inscrire</a></li>
-                        </ul>
-                    </nav>
-           
+            </header>
 
-        </header>
-
+        <main>
         <!-- Search-->
 
         
@@ -46,7 +53,7 @@
                     <div class="searchbar">
                         <div class="iconmap"><i class="fas fa-map-marker-alt"></i></div>
                         <input type="text" class="placeholder" placeholder="Marseille,France" name="search"> 
-                        <button type="submit" class="rechercher">Rechercher</button>
+                        <button type="submit" class="rechercher">Rechercher</button><div class="iconsearch"><i class="fas fa-search"></i></div>
                     </div>
 
         </div>
@@ -93,7 +100,7 @@
             <div class="containerInfo">
                 <div class="iconInfo"> <i class="fas fa-info"></i></div><p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
-            </div>
+            
 
           <!-- Hotels -->
 
@@ -105,7 +112,6 @@
                             <div class="hotelinfoall">
                                 <div class="infohotel">
                                     <a href="" >
-                                        
                                             <img src="/Users/ivanaradic/Desktop/RESERVIA/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
                                             <div class="hotelDescription">
                                                 <h3 class="hotelName">Auberge la Cannebière</h3>
@@ -218,74 +224,83 @@
                     </div>
 
                     <div class="pophot">
+
+
                         <div class="poptitle">
                             <h2>Les plus populaires</h2>
                             <i class="fas fa-chart-line iconUP"></i>
                         </div>
-                        <div class="popinfo">
-                        
-                                <a href="" >
-            
-                                            <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
 
-                                </a>
-                            
-                                <div class="popdesc">
-                                    <h3 class="poplName">Hôtel Le soleil du matin</h3>
-                                    <p class="poppar">Nuit à partir de <span class="euros">128€</span></p>
-                                    <div class="popRate">
-                                        <i class="fas fa-star blueStar"></i>
-                                        <i class="fas fa-star blueStar"></i>
-                                        <i class="fas fa-star blueStar"></i>
-                                        <i class="fas fa-star blueStar"></i>
-                                        <i class="fas fa-star blueStar"></i>
-                                    </div>
-                                </div>
-                            
-                            
-                        </div>
-                        <div class="popinfo">
-                        
-                                <a href="" >
-                                    
-                                        <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au cœur de l'eau Chambres d'hôtes">
-                            
-                                </a>
-                                <div class="popdesc">
-                                    <h3 class="poplName">Au cœur de l'eau Chambres d'hôtes</h3>
-                                    <p class="poppar">Nuit à partir de <span class="euros">71€</span></p>
-                                    <div class="popRate">
-                                        <i class="fas fa-star blueStar"></i>
-                                        <i class="fas fa-star blueStar"></i>
-                                        <i class="fas fa-star blueStar"></i>
-                                        <i class="fas fa-star blueStar"></i>
-                                        <i class="fas fa-star blueStar"></i>
-                                    </div>
-                                </div>
-                            
-                        </div>
-                        <div class="popinfo">
-                        
-                                <a href="" >
-                                    
-                                        <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc" class="imgBLEUBLANC">
+                        <div class="pop3">
+                            <div class="popinfo">
                                 
-                                    
-                                </a>
-                                <div class="popdesc">
-                                    <h3 class="poplName">Hôtel Tout bleu et Blanc</h3>
-                                    <p class="poppar">Nuit à partir de <span class="euros">68€</span></p>
-                                    <div class="popRate">
-                                        <i class="fas fa-star blueStar"></i>
-                                        <i class="fas fa-star blueStar"></i>
-                                        <i class="fas fa-star blueStar"></i>
-                                        <i class="fas fa-star blueStar"></i>
-                                        <i class="fas fa-star blueStar"></i>
+                                <div class="imgpop">
+                                    <a href="">
+                
+                                                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
+
+                                    </a>
+                                </div>  
+                                    <div class="popdesc">
+                                        <h3 class="poplName">Hôtel Le soleil du matin</h3>
+                                        <p class="poppar">Nuit à partir de <span class="euros">128€</span></p>
+                                        <div class="popRate">
+                                            <i class="fas fa-star blueStar"></i>
+                                            <i class="fas fa-star blueStar"></i>
+                                            <i class="fas fa-star blueStar"></i>
+                                            <i class="fas fa-star blueStar"></i>
+                                            <i class="fas fa-star blueStar"></i>
+                                        </div>
                                     </div>
-                                </div>
-                        
+                                
+                                
+                            </div>
+                            <div class="popinfo">
+                                <div class="imgpop">
+                                    <a href="">
+                                        
+                                            <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au cœur de l'eau Chambres d'hôtes">
+                                
+                                    </a>
+                                </div>    
+                                    <div class="popdesc">
+                                        <h3 class="poplName">Au cœur de l'eau Chambres d'hôtes</h3>
+                                        <p class="poppar">Nuit à partir de <span class="euros">71€</span></p>
+                                        <div class="popRate">
+                                            <i class="fas fa-star blueStar"></i>
+                                            <i class="fas fa-star blueStar"></i>
+                                            <i class="fas fa-star blueStar"></i>
+                                            <i class="fas fa-star blueStar"></i>
+                                            <i class="fas fa-star greyStar"></i>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                            <div class="popinfo">
+                                <div class="imgpop">
+                                    <a href="">
+                                        
+                                            <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc" class="imgBLEUBLANC">
+                                    
+                                        
+                                    </a>
+                                </div>      
+                                    <div class="popdesc">
+                                        <h3 class="poplName">Hôtel Tout bleu et Blanc</h3>
+                                        <p class="poppar">Nuit à partir de <span class="euros">68€</span></p>
+                                        <div class="popRate">
+                                            <i class="fas fa-star blueStar"></i>
+                                            <i class="fas fa-star blueStar"></i>
+                                            <i class="fas fa-star blueStar"></i>
+                                            <i class="fas fa-star blueStar"></i>
+                                            <i class="fas fa-star greyStar"></i>
+                                        </div>
+                                    </div>
                             
+                                
+                            </div>
                         </div>
+
                     </div>
 
 
@@ -297,53 +312,84 @@
 
 
 
-        </div>
+       
 
 
 
 
-        <!-- Activites a Marseille-->
+   
+<!-- Activites a Marseille-->
 
-
-            <div class="Activites">
+            <div class="ACTHOT">
                 <h2 class="actmars">Activités a Marseille</h2>
-                <div class="actgroups">
-                    <div class="actsection">
-                        <a href="" class="vieux">
+                <div class="ACTHOTELINFOLL">
+                   
+                        <a href="" class="vieux1">
                             <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="img1">
-                            <h4 class="name">Vieux Port</h4>
+                            <h3 class="name">Vieux Port</h3>
                         </a>
-                    </div>
-
-                    <div class="actsection2">
-                        <a href="" class="fort">
+                   
+                        <a href="" class="fort11">
                             <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomégues" class="img2">
-                            <h4 class="name">Fort de Pomégues</h4>
+                            <h3 class="name">Fort de Pomégues</h3>
                         </a>
-                        <a href="" class="iles">
+                   
+
+                      
+                        <a href="" class="iles11">
                             <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" class="img3">
-                            <h4 class="name">Îles du Frioul</h4>
+                            <h3 class="name">Îles du Frioul</h3>
                         </a>
-                    </div>
+                <div class="actcolumimg">
+
+                  
+                        <a href="" class="fort1">
+                            <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomégues" class="img2">
+                            <h3 class="name">Fort de Pomégues</h3>
+                        </a>
+                   
+
+                      
+                        <a href="" class="iles1">
+                            <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" class="img3">
+                            <h3 class="name">Îles du Frioul</h3>
+                        </a>
                     
-                    <div class="actsection">
-                        <a href="" class="parcnat">
+
+                </div>       
+
+                   
+                        <a href="" class="parcnat1">
                             <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" class="img4">
-                            <h4 class="name">Parc National des Calanques</h4>
+                            <h3 class="name">Parc National des Calanques</h3>
                         </a>
-                    </div>
-
-                    <div class="actsection2">
-                        <a href="" class="dame">
+                    
+                        <a href="" class="dame11">
                             <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-De-La-Garde" class="img5">
-                            <h4 class="name">Notre-Dame-De-La-Garde</h4>
+                            <h3 class="name">Notre-Dame-De-La-Garde</h3>
                         </a>
-                        <a href="" class="parclong">
-                            <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc longchamp" class="img6">
-                            <h4 class="name">Parc Longchamp</h4>
-                        </a>
-                    </div>
+                   
 
+                        
+                        <a href="" class="parclong11">
+                            <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc longchamp" class="img6">
+                            <h3 class="name">Parc Longchamp</h3>
+                        </a>
+                        
+                 <div class="actcolumimg"> 
+                        <a href="" class="dame1">
+                            <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-De-La-Garde" class="img5">
+                            <h3 class="name">Notre-Dame-De-La-Garde</h3>
+                        </a>
+                   
+
+                        
+                        <a href="" class="parclong1">
+                            <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc longchamp" class="img6">
+                            <h3 class="name">Parc Longchamp</h3>
+                        </a>
+                    </div> 
+             
 
                 </div>
 
@@ -380,10 +426,10 @@
    
 
 
-    </div>
+        </div>
 
     
+        </main>
 
-
-</body>
+    </body>
 </html>
