@@ -543,7 +543,7 @@ nav li a:hover{
     flex-direction: column;
     margin: 2%;
     height: auto;
-   width: 100%;
+   
 }
 
 .actcolumimg{
@@ -860,6 +860,7 @@ nav li a:hover{
         justify-content: space-evenly;
         align-content: flex-start;
         width: 100%;
+        padding-right: 20px;
     }
 
     nav ul{
@@ -1090,7 +1091,11 @@ nav li a:hover{
         padding: 0px;
         margin: 0;
     }
-
+    .herbhot h4 {
+        margin-bottom: 0px;
+        padding-left: 20px;
+        font-weight: bold;
+    }
     .pophot{
         background-color: #f2f2f2;
         border-radius: 0;
@@ -1220,9 +1225,10 @@ nav li a:hover{
 .ACTHOT{
     display: flex;
     flex-direction: column;
-    margin: 2%;
+    justify-content: center;
+    margin: 10px;
     height: auto;
-    width: 100%;
+  
    
 }
 
@@ -1260,7 +1266,7 @@ nav li a:hover{
     align-content: center;
     width: 100%;
     height: 230px;
-    margin: 10px;
+    margin: 0 0 10px 0;
     padding-bottom: 10px;
   
     border-radius: 20px;
@@ -1281,7 +1287,7 @@ nav li a:hover{
     align-content: center;
     width: 100%;
     height: 230px;
-    margin: 10px;
+    margin: 0 0 10px 0;
     padding-bottom: 10px;
    
     border-radius: 20px;
@@ -1303,7 +1309,7 @@ nav li a:hover{
     align-content: center;
     width: 100%;
     height: 230px;
-    margin: 10px;
+    margin: 0 0 10px 0;
     padding-bottom: 10px;
     
     border-radius: 20px;
@@ -1322,7 +1328,7 @@ nav li a:hover{
     align-content: center;
     width: 100%;
     height: 230px;
-    margin: 10px;
+    margin: 0 0 10px 0;
     padding-bottom: 10px;
    
     border-radius: 20px;
@@ -1345,7 +1351,8 @@ nav li a:hover{
     align-content: center;
     width: 100%;
     height: 230px;
-    margin: 10px;
+    margin: 0 0 10px 0;
+
     padding-bottom: 10px;
     
     border-radius: 20px;
@@ -1368,7 +1375,7 @@ nav li a:hover{
     align-content: center;
     width: 100%;
     height: 230px;
-    margin: 10px;
+    margin: 0 0 10px 0;
     padding-bottom: 10px;
    
     border-radius: 20px;
@@ -1449,6 +1456,12 @@ nav li a:hover{
         margin: 0;
     }
 
+    .footersections {
+        display: flex;
+        flex-direction: column;
+        margin-right: 100px;
+        margin-left: 0;
+    }
     .footertittle {
         font-size: 1em;
         font-weight: bold;
@@ -1492,22 +1505,33 @@ nav li a:hover{
 }
 nav li {
     padding-top: 30px;
-    padding-bottom: 10px;
-    margin-left: 20px;  
+    padding-bottom:0;
+    margin-left: 100px;  
 }
 
 .LOGOSVG img {
     width: 5em; 
+    padding-left: 20px;
 }
 
 nav li a:hover{
     color: #0065FC;
     border-bottom: 4px solid #0065FC;
     border-top: 0;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 0px solid #F2F2F2;
 }
 .MENINAV{
-    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
     padding-bottom: 10PX;
 }
 
@@ -1556,6 +1580,22 @@ nav li a:hover{
     padding-bottom: 20px;
 }
 
+.iconFilter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5em;
+    height: 2.5em;
+    padding: 4px;
+    border-radius: 50%;
+    padding: 2px;
+    margin: 0;
+    margin-left: -10px;
+    text-align: center;
+    color: #0065FC;
+    background-color: #dae4f3;
+}
+
 .filters{
     display: flex;
     flex-direction: column;
@@ -1571,10 +1611,10 @@ nav li a:hover{
     align-items: center;
     justify-content: center;
     width: auto;
-    height: 2em;
+    height: 2.5em;
     border: 2px solid #f2f2f2;
     border-left: none;
-    margin-left: 0;
+    margin-left: 10px;
     margin-right: 20px;
     margin-bottom: 20px;
     padding-right: 20px;
@@ -1618,23 +1658,48 @@ nav li a:hover{
     flex-direction: column-reverse;
     justify-content: space-between;
     
-    margin: 2%;
+    margin: 0;
     height: auto;
 }
 
 .hotelDescription {
     font-size: 1.4em;
 }
+.hotelinfoall {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    height: fit-content;
+    padding-bottom: 10px;
+    margin: 0;
+}
 
+.infohotel {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    width: 29%;
+}   
 .herbhot{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    height: auto;
+
+   
+   
     background-color: #ffffff;
     border-radius: 20px;
     padding: 40px 0 40px 0px;
-    margin: 0px;
+   
 }
 
 .herbhot h4 {
-    font-size: 1.8em;
+    font-size: 1.4em;
 }
 
 .herbhot{
@@ -1651,7 +1716,7 @@ nav li a:hover{
    
     border-radius: 20px;
     padding: 40px 0 40px 0px;
-    margin: 0px;
+    margin: 10px;
 }
 .poptitle {
     margin:  0px 40px 0 40px;
@@ -1699,8 +1764,9 @@ nav li a:hover{
  .ACTHOT{
     display: flex;
     flex-direction: column;
-    margin: 2%;
+    margin: 0;
     height: auto;
+    width: 100%;
    
 }
 
@@ -1710,7 +1776,7 @@ nav li a:hover{
 }
 .actmars{
     margin-top: 0px;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .ACTHOTELINFOLL{
@@ -1727,6 +1793,7 @@ nav li a:hover{
 }
 .ACTHOTELINFOLL h3 {
  padding-left: 10px;
+ padding-bottom: 20px;
 
 }
 
@@ -1736,7 +1803,7 @@ nav li a:hover{
     justify-content: flex-start;
     align-content: center;
     width: 29%;
-    height: 230px;
+    height:auto;
     margin: 10px;
     padding-bottom: 10px;
   
@@ -1757,7 +1824,7 @@ nav li a:hover{
     justify-content: flex-start;
     align-content: center;
     width: 29%;
-    height: 230px;
+    height:auto;
     margin: 10px;
     padding-bottom: 10px;
    
@@ -1779,7 +1846,7 @@ nav li a:hover{
     justify-content: flex-start;
     align-content: center;
     width: 29%;
-    height: 230px;
+    height:auto;
     margin: 10px;
     padding-bottom: 10px;
     
@@ -1798,7 +1865,7 @@ nav li a:hover{
     justify-content: flex-start;
     align-content: center;
     width: 29%;
-    height: 230px;
+    height:auto;
     margin: 10px;
     padding-bottom: 10px;
    
@@ -1821,7 +1888,7 @@ nav li a:hover{
     justify-content: flex-start;
     align-content: center;
     width: 29%;
-    height: 230px;
+    height:auto;
     margin: 10px;
     padding-bottom: 10px;
     
@@ -1844,7 +1911,7 @@ nav li a:hover{
     justify-content: flex-start;
     align-content: center;
     width: 29%;
-    height: 230px;
+    height:auto;
     margin: 10px;
     padding-bottom: 10px;
    
