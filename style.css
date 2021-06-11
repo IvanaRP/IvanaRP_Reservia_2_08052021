@@ -56,15 +56,13 @@ a{
     margin-right: 2%;
 }
 .LOGOSVG{
+    flex-grow:2;
     padding-top: 40px;
     padding-left: 0px;
 }
 
 
-.SIGNUPMOB{
-    display:none;
 
-}
 
 .NAVMOB{
     padding-top: 30px;
@@ -109,14 +107,28 @@ nav li a:hover{
 
 .SIGNUP {
     color: #0065FC;
-    padding: 60px 0px 0;
+    padding: 60px 0 0 30px;
     font-weight: bold;
     
 }
-
-.SIGNUPmob{
-    display: none;
+.SIGNUP a:hover{
+    color: #0065FC;
+    border-top: 4px solid #0065FC;
+    
 }
+
+.SIGN li{
+    padding-top: 30px;
+    margin-left: 20px;
+  
+}
+
+.SIGNUP a{
+   
+    padding: 60px 30px 0;
+}
+
+
 /* Search bar */
 
 .search_section{
@@ -362,8 +374,7 @@ nav li a:hover{
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
-    -webkit-box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
-    -moz-box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
+ 
    
 }
 
@@ -497,8 +508,7 @@ nav li a:hover{
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
-    -webkit-box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
-    -moz-box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
+   
 }
 
 .popinfo:hover{
@@ -506,10 +516,7 @@ nav li a:hover{
 }
 
 .popdesc{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    
     height: auto;
     width: 55%;
     padding: 0px 15px;
@@ -582,8 +589,7 @@ nav li a:hover{
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -webkit-box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -moz-box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
+   
 
 }
 .fort1{
@@ -599,12 +605,8 @@ nav li a:hover{
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -webkit-box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -moz-box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
+   
 
-}
-.fort11{
-    display: none;
 }
 
 .iles1{
@@ -620,13 +622,8 @@ nav li a:hover{
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -webkit-box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -moz-box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
+  
 
-}
-
-.iles11{
-    display: none;
 }
 
 
@@ -643,14 +640,10 @@ nav li a:hover{
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -webkit-box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -moz-box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
+   
 
 }
 
-.dame11{
-    display: none;
-}
 
 .dame1{
     display: flex;
@@ -665,14 +658,10 @@ nav li a:hover{
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -webkit-box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -moz-box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
+  
 
 }
 
-.parclong11{
-    display: none;
-}
 
 
 .parclong1{
@@ -688,8 +677,7 @@ nav li a:hover{
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -webkit-box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -moz-box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
+   
 
 }
 .img1{
@@ -810,7 +798,7 @@ nav li a:hover{
 
 /* Mobile version */
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     
   
@@ -826,12 +814,13 @@ nav li a:hover{
 
     .NAVMENU{
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: baseline;
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 2%;
+        border-bottom: 4px solid #F2F2F2;
+       
     }
 
     .LOGOSVG{
@@ -840,40 +829,54 @@ nav li a:hover{
         flex-wrap: wrap;
         justify-content: space-between;
         align-content: flex-end;
-        width: 100%;
+        width: fit-content;
         padding-top: 0;
-        padding-left: 10px;
-        padding-right: 10px;
+        order: 1;
+        flex-grow: 2;
+       
     }
-
+    .LOGOSVG img {
+        width: 5em;
+        padding-left: 20px;
+        margin-top: 20px;
+    }
     .NAVMOB{
         width: 100%;
         padding-top: 30px;
         padding-left: 20px;
         padding-right: 20px;
     }
-
+    .herb_actmenu{
+        display: flex;
+        order: 3; 
+    }
     .MENINAV{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content:center;
         align-content: flex-start;
         width: 100%;
-        padding-right: 20px;
+       
+        order: 3;
+    }
+    .sign{
+        display: flex;
+        order: 2;
+        padding-bottom: 10px;
     }
 
     nav ul{
         list-style-type: none;
         padding: 0;
         margin: 0;
-        border-bottom: 4px solid #F2F2F2;
+        border-bottom:0;
     }
 
     nav li{
         padding-top: 30px;
         padding-bottom: 10px;
-        margin-left: 20px;
+        margin-left:0;
     
 
     }
@@ -890,20 +893,18 @@ nav li a:hover{
     }
 
     .SIGNUP {
-        display: none;
-        margin-left: 0;
-    }
-
-
-    .sign{
         display: flex;
-        justify-content: flex-end;
+        margin-left: 0;
+        order: 2;
     }
 
-    .SIGNUPmob{
+
+    
+
+    .SIGNUP{
         display: flex;
         color: #0065FC;
-        padding: 30px 20px 20px 0px;
+        padding: 30px 20px 0px 0px;
         font-weight: bold;
     }
 
@@ -992,18 +993,18 @@ nav li a:hover{
 
     /* Style the submit button */
     .rechercher {
-    display: none;
+        display: none;
         width: auto;
         height: 2.5em;
         font-size: 1em;
         margin: 0;
         border-radius:  0 10px 10px 0;
         background: #0065FC;
+        border-top: 0;
+        border-bottom: 0;
         color: white;
         font-size: 1em;
         text-align: center;
-        border-top: 1px solid #0065FC;
-        border-bottom: 1px solid #0065FC;    
         border-left: none;
         border-right: none;
         cursor: pointer;
@@ -1086,10 +1087,17 @@ nav li a:hover{
     }
 
     .herbhot{
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: fit-content;
+        margin-left: 0;
+        margin: 0%;
+        padding-bottom: 20px;
         background-color: #ffffff;
-        border-radius: 0;
-        padding: 0px;
-        margin: 0;
+        padding:0;
+       
     }
     .herbhot h4 {
         margin-bottom: 0px;
@@ -1103,9 +1111,6 @@ nav li a:hover{
         margin: 2%;
     }
 
-    .herbhot{
-        width: 100%;
-    }
 
 
     .herbhot h2 {
@@ -1117,13 +1122,9 @@ nav li a:hover{
     .hotelinfoall{
         display: flex;
         flex-direction: column;
-        width: fit-content;
         justify-content: space-between;
-        align-content: flex-start;
-        flex-wrap: wrap;
         height: fit-content;
-        padding-bottom: 10px;
-        margin: 0;
+       
     }
 
 
@@ -1145,31 +1146,34 @@ nav li a:hover{
         padding-bottom: 5px;
     }
 
-    .infohotel{
+
+   
+   .infohotel{
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        flex-direction: row;
         align-content: center;
-        width:fit-content;
+        justify-content: space-between;
+        height: 95%;
+        
+        width: fit-content;
         margin: 10px;
-        padding-bottom: 10px;
+       
         border: 5px solid rgb(255, 255, 255);
         border-radius: 20px;
         background-color: #ffffff;
-        box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
-        -webkit-box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
-        -moz-box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
+        box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
+     
     }
+
+    
 
     .infohotel img{
-        height: 125px;
-        width: 100%;
-        object-fit: cover;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-
-
+    height: 125px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
 
     /* POPHotels */
 
@@ -1233,7 +1237,9 @@ nav li a:hover{
 }
 
 .actcolumimg{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    width: auto;
    
 }
 .actmars{
@@ -1272,15 +1278,10 @@ nav li a:hover{
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -webkit-box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -moz-box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
+  
 
 }
 .fort1{
-    display: none;
-}
-
-.fort11{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1289,20 +1290,18 @@ nav li a:hover{
     height: 230px;
     margin: 0 0 10px 0;
     padding-bottom: 10px;
-   
+  
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -webkit-box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -moz-box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
 
 }
+
+
+
+
 
 .iles1{
-    display: none;
-}
-
-.iles11{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1315,8 +1314,7 @@ nav li a:hover{
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -webkit-box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -moz-box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
+  
 
 }
 
@@ -1334,17 +1332,12 @@ nav li a:hover{
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -webkit-box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -moz-box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
+   
 
 }
+
 
 .dame1{
-    display: none;
-}
-
-
-.dame11{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1358,17 +1351,12 @@ nav li a:hover{
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -webkit-box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -moz-box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
 
 }
+
+
 
 .parclong1{
-    display: none;
-}
-
-
-.parclong11{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1381,8 +1369,7 @@ nav li a:hover{
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -webkit-box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -moz-box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
+ 
 
 }
 .img1{
@@ -1491,7 +1478,7 @@ nav li a:hover{
 /* Tablet version */
  /* tablet, landscape iPad, lo-res laptops ands desktops */ 
 
-    @media screen and (min-width:768px) and (max-width:1024px)
+    @media screen and (min-width:768px) and (max-width:1150px)
     {
     
 
@@ -1506,12 +1493,13 @@ nav li a:hover{
 nav li {
     padding-top: 30px;
     padding-bottom:0;
-    margin-left: 100px;  
+     
 }
 
 .LOGOSVG img {
     width: 5em; 
     padding-left: 20px;
+    margin-top: 10px;
 }
 
 nav li a:hover{
@@ -1644,7 +1632,7 @@ nav ul {
     margin-right: 10px;
     text-align: center;
     color: #0065FC;
-    background-color: none;
+   
 }
 .containerInfo{
     font-size: 1.8em;
@@ -1771,26 +1759,28 @@ nav ul {
 }
 
 .actcolumimg{
-    display: none;
+    display: flex;
+    flex-direction: row;
+    width: 68%;
    
 }
 .actmars{
     margin-top: 0px;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .ACTHOTELINFOLL{
     display: flex;
     flex-direction: row;
     width: fit-content;
-    justify-content: space-between;
-    align-content: flex-start;
+    justify-content: flex-start;
+    align-content: center;
     flex-wrap: wrap;
     height: fit-content;
-    padding-bottom: 10px;
-    margin: 0;
-   
+    padding: 0 5px 10px 5px;
+
 }
+
 .ACTHOTELINFOLL h3 {
  padding-left: 10px;
  padding-bottom: 20px;
@@ -1810,51 +1800,44 @@ nav ul {
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -webkit-box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -moz-box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
+  
 
 }
+
+
 .fort1{
-    display: none;
-}
-
-.fort11{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
-    width: 29%;
+    width: 50%;
     height:auto;
     margin: 10px;
     padding-bottom: 10px;
-   
+   margin-right: 20px;
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -webkit-box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -moz-box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
+   
 
 }
+
+
 
 .iles1{
-    display: none;
-}
-
-.iles11{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
-    width: 29%;
+    width: 50%;
     height:auto;
-    margin: 10px;
+    margin: 10px 0 10px 10px;
     padding-bottom: 10px;
     
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -webkit-box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -moz-box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
+  
 
 }
 
@@ -1872,54 +1855,45 @@ nav ul {
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -webkit-box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -moz-box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
+   
 
 }
+
+
+
 
 .dame1{
-    display: none;
-}
-
-
-.dame11{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
-    width: 29%;
+    width: 50%;
     height:auto;
     margin: 10px;
     padding-bottom: 10px;
-    
+   margin-right: 20px;
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -webkit-box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -moz-box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
+
 
 }
+
 
 .parclong1{
-    display: none;
-}
-
-
-.parclong11{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
-    width: 29%;
+    width: 50%;
     height:auto;
-    margin: 10px;
+    margin: 10px 0 10px 10px;
     padding-bottom: 10px;
-   
+  
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -webkit-box-shadow: 0px 3px 5px -3px rgb(0 0 0 / 33%);
-    -moz-box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.33);
+ 
 
 }
 .img1{
