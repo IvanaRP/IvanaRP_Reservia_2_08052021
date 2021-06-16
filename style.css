@@ -746,7 +746,7 @@ nav li a:hover{
 
 /* Footer */
 
-.footer{
+footer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
